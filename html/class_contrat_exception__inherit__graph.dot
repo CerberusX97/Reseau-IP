@@ -1,0 +1,17 @@
+digraph "ContratException"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="ContratException",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Classe de base des exceptions de contrat."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="std::logic_error",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AssertionException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_assertion_exception.html",tooltip="Classe pour la gestion des erreurs d'assertion."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="InvariantException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_invariant_exception.html",tooltip="Classe pour la gestion des erreurs d'invariant."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PostconditionException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_postcondition_exception.html",tooltip="Classe pour la gestion des erreurs de postcondition."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PreconditionException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_precondition_exception.html",tooltip="Classe pour la gestion des erreurs de précondition."];
+}

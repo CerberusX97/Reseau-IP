@@ -1,0 +1,12 @@
+digraph "Graphe::getPointsArticulation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Graphe::getPointsArticulation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Trouve les points d'articulation du graphe."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Graphe::enleverSommet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graphe.html#a9cfc2f8a99cb585650bd78668b88192c",tooltip="Enlève un sommet du graphe ainsi que tous les arcs qui vont et partent de ce sommet."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Graphe::estFortementConnexe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graphe.html#a53ec24b5ffbd6d978d1c4592df43b9b4",tooltip="Vérifie si le graphe est fortement connexe."];
+}
